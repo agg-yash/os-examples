@@ -1,0 +1,10 @@
+Examples commands: 
+
+go run ./process_2/os_simulator.go -q 3:100,3:100 -x -m
+go run ./process_2/os_simulator.go -q 5:100,1:0 -x -m
+go run ./process_2/os_simulator.go -q 1:0,5:100 -x -m
+
+go run ./process_2/os_simulator.go -q 1:0,5:100 -x -m -w SWITCH_ON_EXIT
+
+go run ./process_2/os_simulator.go -q 1:0,9:100 -x -m 
+go run ./process_2/os_simulator.go -q 1:0,9:100 -x -m -e WAKE_NOW
