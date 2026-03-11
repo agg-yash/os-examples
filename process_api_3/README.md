@@ -3,9 +3,9 @@
 Small C++ programs to explore basic UNIX process APIs:
 
 - `fork(2)`
-- `wait(2)` / `waitpid(2)`
+- `wait(2)`
 - `execve(2)` (via the `exec*` family)
-- simple output redirection with `dup2(2)`
+- simple output redirection
 
 Each file is a tiny, focused example you can compile and run while watching process trees, exit statuses, and file descriptors.
 
@@ -14,7 +14,7 @@ Each file is a tiny, focused example you can compile and run while watching proc
 - `fork_1.cpp`: create a child process and print PIDs from both parent and child to see how `fork()` duplicates execution.
 - `wait_2.cpp`: demonstrate how a parent can wait for a child to finish and inspect its exit status.
 - `exec_3.cpp`: show how `exec()` replaces the current process image with a new program.
-- `redirect_4.cpp`: redirect standard output to a file using `dup2()` and then run code that writes to stdout.
+- `redirect_4.cpp`: redirect standard output to a file and then run code that writes to stdout.
 
 ### Build
 
