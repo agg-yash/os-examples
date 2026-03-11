@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
     cout << "hello world (pid:" << getpid() << ")" << endl;
 
-    int rc = fork();
+    int rc = fork(); // fork system call
 
     if (rc < 0) { // fork failed
         cerr << "fork failed" << endl;
@@ -20,8 +20,7 @@ int main(int argc, char *argv[])
         cout << "hello, I am child (pid:" << getpid() << ")" << std::endl;
     } 
     else { // parent process : parent process will always have rc as pid of child process
-        cout << "hello, I am parent of " << rc 
-                  << " (pid:" << getpid() << ")" << endl;
+        cout << "hello, I am parent of " << rc << " (pid:" << getpid() << ")" << endl;
     }
 
     return 0;
